@@ -17,18 +17,6 @@ vec2_t vertices[4] = {
   { .x = 90, .y = 90 }
 };
 
-typedef struct {
-  uint8_t r;
-  uint8_t g;
-  uint8_t b;
-} color_t;
-
-color_t colors[3] = {
-  { .r = 0xFF, .g = 0x00, .b = 0x00 },
-  { .r = 0x00, .g = 0xFF, .b = 0x00 },
-  { .r = 0x00, .g = 0x00, .b = 0xFF }
-};
-
 void process_input(void) {
   SDL_Event event;
   while (SDL_PollEvent(&event)) {
